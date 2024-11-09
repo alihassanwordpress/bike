@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rental Website Using HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!--Navbar-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="#" class="logo"> Bike Rent</a>
+            <div class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#bikes" class="nav-link">Bike</a>
+                <a href="#destination" class="nav-link">Destination</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <!--Mobile Sign up-->
+                <a href="#" class="mobile-sign-up"> Sign up</a>
+            </div>
+            <!--Sign up Button-->
+            <a href="#" class="sign-up">Sign up</a>
+            <!--Menu Icon-->
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <!--Home-->
+    <section class="home" id="home">
+        <h1 class="home-title"> Harley Davidson</h1>
+        <div class="home-content container">
+            <div class="home-data">
+                <div class="home-box border-home">
+                    <h3>Electric Motor</h3>
+                    <h2>Revelation</h2>
+                </div>
+                <div class="home-box border-home">
+                    <h3>Torque</h3>
+                    <h2>86 Ft-Lb</h2>
+                </div>
+                <div class="home-box">
+                    <h3>Horspower</h3>
+                    <h2>105 Hp / X78 Kw</h2>
+                </div>
+            </div>
+            <img src="home.png" alt="" class="home-img">
+            <div class="helmet-box">
+                <img src="helmet.png" alt="">
+                <a href="#">Helmet<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="home-btns">
+            <a href="#" class="dealer-btn"><i class="fa-regular fa-compass"></i>Find a Dealer</a>
+            <a href="#" class="rider-btn"><i class="fa-solid fa-motorcycle"></i> Test Rider</a>
+        </div>
+    </section>
+    <!--Bike-->
+    <section class="bikes container" id="bikes">
+        <!--Heading-->
+        <div class="heading">
+            <span>LAST MINUTE OFFERS</span>
+            <h2>Motorcycle & Scooters for rent</h2>
+        </div>
+        <!--Bike Content-->
+        <div class="bikes-content">
+        </div>
+    </section>
+    <!--Work-->
+    <section class="work" id="work">
+        <!--Heading-->
+        <div class="heading container">
+            <span>One-OF-A-KIND MOTORCYCLE RENTALS</span>
+            <h2>Search, Compare, Reserve</h2>
+        </div>
+        <div class="work-container container">
+            <!--box 1-->
+            <div class="work-box">
+                <i class="fa-solid fa-medal"></i>
+                <h3 class="work-title">Find the right motorbike</h3>
+                <p class="work-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id molestiae eveniet! Adipisci,
+                    nesciunt tempora. Aperiam eligendi unde, harum voluptas reprehenderit commodi quas quo cum sunt
+                    perferendis, fugit qui ad!
+                </p>
+            </div>
+            <!--box 2-->
+            <div class="work-box">
+                <i class="fa-regular fa-credit-card"></i>
+                <h3 class="work-title">Book at the Best price</h3>
+                <p class="work-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id molestiae eveniet! Adipisci,
+                    nesciunt tempora. Aperiam eligendi unde, harum voluptas reprehenderit commodi quas quo cum sunt
+                    perferendis, fugit qui ad!
+                </p>
+            </div>
+            <!--box 3-->
+            <div class="work-box">
+                <i class="fa-solid fa-person-biking"></i>
+                <h3 class="work-title">Enjoy the Rider</h3>
+                <p class="work-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed id molestiae eveniet! Adipisci,
+                    nesciunt tempora. Aperiam eligendi unde, harum voluptas reprehenderit commodi quas quo cum sunt
+                    perferendis, fugit qui ad!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Destination-->
+    <section class="destination" id="destination">
+        <!--Heading-->
+        <div class="heading container">
+            <span>Top Cities in Malta</span>
+            <h2>Top Rental Destination</h2>
+        </div>
+        <!-- Swiper -->
+        <div class="destination-container container swiper">
+            <div class="swiper-wrapper">
+                <!-- Slider City 1 -->
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <img src="city-1.jpg" alt="" class="city-img">
+                        <div class="box-text">
+                            <h2 class="ct-title">Croatia</h2>
+                            <span class="city-name">Zadar</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider City 2 -->
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <img src="city-2.jpg" alt="" class="city-img">
+                        <div class="box-text">
+                            <h2 class="ct-title">Croatia</h2>
+                            <span class="city-name">Zadar</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider City 3 -->
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <img src="city-3.jpg" alt="" class="city-img">
+                        <div class="box-text">
+                            <h2 class="ct-title">Croatia</h2>
+                            <span class="city-name">Zadar</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider City 4 -->
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <img src="city-4.jpg" alt="" class="city-img">
+                        <div class="box-text">
+                            <h2 class="ct-title">Croatia</h2>
+                            <span class="city-name">Zadar</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider City 5 -->
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <img src="city-5.jpg" alt="" class="city-img">
+                        <div class="box-text">
+                            <h2 class="ct-title">Croatia</h2>
+                            <span class="city-name">Zadar</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider City 6 -->
+                <div class="swiper-slide">
+                    <div class="city-box">
+                        <img src="city-6.jpg" alt="" class="city-img">
+                        <div class="box-text">
+                            <h2 class="ct-title">Croatia</h2>
+                            <span class="city-name">Zadar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="heading container">
+            <span>Top Cities in Malta</span>
+            <h2>Top Rental Destination</h2>
+        </div>
+        <!--Slider with AI-->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="city-1.jpg" alt="City 1">
+                    <h2>City 1</h2>
+                </div>
+                <div class="slide">
+                    <img src="city-2.jpg" alt="City 2">
+                    <h2>City 2</h2>
+                </div>
+                <div class="slide">
+                    <img src="city-3.jpg" alt="City 3">
+                    <h2>City 3</h2>
+                </div>
+                <div class="slide">
+                    <img src="city-4.jpg" alt="City 4">
+                    <h2>City 4</h2>
+                </div>
+                <div class="slide">
+                    <img src="city-5.jpg" alt="City 5">
+                    <h2>City 5</h2>
+                </div>
+                <div class="slide">
+                    <img src="city-6.jpg" alt="City 6">
+                    <h2>City 6</h2>
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="Main.js"></script>
+</body>
+
+
+</html>

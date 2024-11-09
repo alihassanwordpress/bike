@@ -1,0 +1,538 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Variables */
+:root {
+    --main-color: #ff4424;
+    --second-color: #f77214;
+    --text-color: #080a08;
+    --text-alter-color: #868e96;
+    --third-color: #fde628;
+    --bg-color: #fff;
+    --container-color: #faeee4;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+.container {
+    max-width: 1060px;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: var(--container-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #e1dbd2;
+}
+
+.logo {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 0 2px;
+    border: 2px solid var(--second-color);
+    font-weight: 500;
+    color: var(--bg-color);
+    background: var(--text-color);
+    text-transform: uppercase;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.mobile-sign-up,
+.sign-up {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    text-transform: uppercase;
+
+}
+
+.mobile-sign-up:hover,
+.sign-up:hover {
+    background: var(--second-color);
+    transition: 0.3s;
+}
+
+.mobile-sign-up {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+
+.menu-icon div {
+    display: block;
+    background: var(--text-color);
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+
+.move .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line2 {
+    opacity: 0;
+}
+
+.move .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Home Section */
+
+.home {
+    padding-top: 7rem !important;
+    background: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home h1 {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 5.2rem;
+    line-height: 4rem;
+    background: var(--bg-color);
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.home-data {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.home-box {
+    display: grid;
+    gap: 4px;
+}
+
+.home-box h3 {
+    font-size: 0.93rem;
+}
+
+.home-box h2 {
+    font-size: 1rem;
+    color: var(--second-color);
+    text-transform: uppercase;
+}
+
+.border-home {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1dbd2;
+}
+
+.home-img {
+    max-width: 650px;
+    width: 100%;
+}
+
+.helmet-box img {
+    max-width: 140px;
+    width: 100%;
+}
+
+.helmet-box {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.helmet-box::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    width: 120%;
+    height: 24px;
+    border: 2px solid #e1dbb2;
+    z-index: -1;
+}
+
+.helmet-box a {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--text-color);
+    background: var(--third-color);
+    padding: 2px 8px;
+}
+
+.helmet-box i {
+    font-size: 19px;
+}
+
+.home-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-btns a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 14px;
+    font-size: 0.87rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.home-btns i {
+    font-size: 17px;
+}
+
+.dealer-btn {
+    background: var(--third-color);
+}
+
+.rider-btn {
+    background: var(--bg-color);
+}
+
+.home-btns a:hover {
+    background: var(--second-color);
+    color: var(--bg-color);
+    transition: 0.3s;
+}
+
+/*Bike*/
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--second-color);
+    text-transform: uppercase;
+}
+
+.heading h2 {
+    font-size: 1.8rem;
+}
+
+.bikes-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.bike-box {
+    position: relative;
+    padding: 15px;
+    background: var(--bg-color);
+    border: 1px solid hsl(0deg 0% 54% / 14%);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bike-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-data h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.title-data p {
+    margin: 0.5rem 0 0;
+    color: var(--text-alter-color);
+}
+
+.bike-price {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.book-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: var(--second-color);
+    /* Orange background color */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+    background-color: var(--main-color);
+    /* Darker orange on hover */
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: hsl(134, 61%, 41% 0.14);
+    color: #28a745;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+}
+
+.work .heading {
+    align-items: center;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.work-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.work-box i {
+    font-size: 1.6rem;
+    color: var(--second-color);
+    background: hsl(25, 93%, 52%, 7%);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.work-title { 
+    font-size: 1.125rem;
+    line-height: 1.3rem;
+    margin: 1.4rem 0 0.7rem;
+}
+
+.work-description {
+    font-size: 0.938rem;
+}
+
+/* Swiper container */
+.destination-container {
+    width: 100%;
+    padding: 40px 0;
+}
+
+/* Swiper container */
+.destination-container {
+    width: 100%;
+    padding: 40px 0;
+}
+
+/* Swiper slide */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* City box */
+.city-box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.city-box:hover {
+    transform: translateY(-10px);
+}
+
+/* City image */
+.city-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Box text */
+.box-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* City title */
+.ct-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* City name */
+.city-name {
+    font-size: 1rem;
+}
+
+/* Swiper pagination */
+.swiper-pagination {
+    bottom: 10px !important;
+}
+
+/* Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+}
+
+/* Additional styles for h2 and span inside .box-text */
+.box-text h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box-text span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/*Slider with Ai*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 600%; /* 100% * number of slides */
+    animation: slide 18s infinite;
+}
+
+.slide {
+    width: 100vw; /* Full viewport width */
+    flex: 0 0 100%; /* Each slide takes up 100% of the viewport width */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto 10px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 10px 0 0;
+    color: #333;
+}
